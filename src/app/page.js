@@ -46,36 +46,6 @@ export default function Home() {
               Your guided program for navigating GLP-1 medications with confidence — empowered, informed, and supported every step of the way.
             </p>
 
-            {/* Overview Video Placeholder */}
-            <div className="mt-8 max-w-lg">
-              <div
-                className="relative w-full rounded-xl overflow-hidden shadow-lg group cursor-pointer"
-                style={{ aspectRatio: "16/9", background: "linear-gradient(135deg, #2c6070, #457B8Ddd, #457B8D99)" }}
-              >
-                <div className="absolute inset-0 opacity-[0.07]">
-                  <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                      <pattern id="herogrid" width="40" height="40" patternUnits="userSpaceOnUse">
-                        <circle cx="20" cy="20" r="1" fill="white" />
-                      </pattern>
-                    </defs>
-                    <rect width="100%" height="100%" fill="url(#herogrid)" />
-                  </svg>
-                </div>
-                <div className="absolute inset-0 flex flex-col items-center justify-center gap-3">
-                  <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center border border-white/30 transition-transform group-hover:scale-105">
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="white" className="ml-1">
-                      <path d="M8 5v14l11-7z" />
-                    </svg>
-                  </div>
-                  <div className="text-center">
-                    <p className="text-white/90 text-sm font-medium">0. GLP-1 Coaching.mp4</p>
-                    <p className="text-white/50 text-xs mt-1">Video coming soon</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             {/* Progress */}
             {completed.length > 0 && (
               <div className="mt-8 max-w-xs">

@@ -4,8 +4,29 @@ import { useState, useEffect, use } from "react";
 import { modules } from "@/data/modules";
 import Link from "next/link";
 
-/* ─── Video Placeholder ─── */
-function VideoPlaceholder({ title, moduleColor }) {
+/* ─── Video Placeholder / Embed ─── */
+function VideoPlaceholder({ title, moduleColor, embedUrl }) {
+  if (embedUrl) {
+    // Convert to nocookie domain and add params for inline playback
+    const fixedUrl = embedUrl
+      .replace('www.youtube.com', 'www.youtube-nocookie.com')
+      + (embedUrl.includes('?') ? '&' : '?')
+      + 'rel=0&modestbranding=1&origin=' + (typeof window !== 'undefined' ? window.location.origin : '');
+    return (
+      <div className="relative w-full rounded-xl overflow-hidden shadow-lg" style={{ aspectRatio: "16/9" }}>
+        <iframe
+          src={fixedUrl}
+          className="absolute inset-0 w-full h-full"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+          title={title}
+          frameBorder="0"
+          referrerPolicy="strict-origin-when-cross-origin"
+        />
+      </div>
+    );
+  }
+
   return (
     <div
       className="relative w-full rounded-xl overflow-hidden shadow-lg group cursor-pointer"
@@ -294,9 +315,6 @@ export default function ModulePage({ params }) {
 
           {/* Main content */}
           <main className="min-w-0 flex-1">
-            {/* Slide */}
-            <SlideDisplay slides={mod.slides} color={mod.color} />
-
             {/* Section content */}
             <div key={activeSection} className="animate-fade-in-up" style={{ opacity: 1 }}>
               {/* Section header */}
@@ -313,7 +331,7 @@ export default function ModulePage({ params }) {
               {/* Video placeholder */}
               {section.type === "video" && section.videoPlaceholder && (
                 <div className="mb-8">
-                  <VideoPlaceholder title={section.videoPlaceholder} moduleColor={mod.color} />
+                  <VideoPlaceholder title={section.videoPlaceholder} moduleColor={mod.color} embedUrl={section.videoEmbed} />
                 </div>
               )}
 

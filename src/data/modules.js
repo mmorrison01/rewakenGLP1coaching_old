@@ -7,11 +7,13 @@ export const modules = [
     color: "#457B8D",
     slides: ["/slides/m1.jpg"],
     videoFile: "1. Welcome & Keypoints.mp4",
+    videoEmbed: "https://www.youtube.com/embed/V8yBkTzYvJI",
     sections: [
       {
         title: "Welcome!",
         type: "video",
         videoPlaceholder: "Welcome & Keypoints",
+        videoEmbed: "https://www.youtube.com/embed/V8yBkTzYvJI",
         content: `Whether you're just starting your GLP-1 journey with medications like semaglutide or tirzepatide, or you're already a few weeks in, this coaching program is designed to support you every step of the way.
 
 This isn't just about weight loss — it's about feeling better in your body, reclaiming your energy, building confidence, and working with your medication to understand how it affects your appetite, digestion, and metabolism.`
@@ -48,11 +50,13 @@ This program will give you the guidance, tools, and support you need to navigate
     color: "#457B8D",
     slides: ["/slides/m2.jpg"],
     videoFile: "2. What GLP-1 Medications Do in the Body.mp4",
+    videoEmbed: "https://www.youtube.com/embed/SJcG6CCpcn4",
     sections: [
       {
         title: "How GLP-1 Medications Work",
         type: "video",
         videoPlaceholder: "What GLP-1 Medications Do in the Body",
+        videoEmbed: "https://www.youtube.com/embed/SJcG6CCpcn4",
         content: `GLP-1 medications (like semaglutide and tirzepatide) are designed to mimic a hormone your body naturally produces called glucagon-like peptide-1 (GLP-1). Understanding how this works can help you see why these medications are so effective — and why your body may feel different as it adjusts.`
       },
       {
@@ -107,11 +111,13 @@ You may notice:
     color: "#457B8D",
     slides: ["/slides/m3.jpg"],
     videoFile: "3. Side Effects Are Normal — and Manageable.mp4",
+    videoEmbed: "https://www.youtube.com/embed/Qw_n0sP4fzA",
     sections: [
       {
         title: "Early Side Effects: What's Normal",
         type: "video",
         videoPlaceholder: "Side Effects Are Normal — and Manageable",
+        videoEmbed: "https://www.youtube.com/embed/Qw_n0sP4fzA",
         content: `When starting a GLP-1 medication or increasing your dose, it's completely normal to notice some side effects in the first few weeks. Your body is adjusting to a new way of processing food, regulating appetite, and managing blood sugar.`
       },
       {
@@ -144,11 +150,13 @@ In the upcoming training "GLP-1 Knowledge & Side Effects" in the app, you'll lea
     color: "#457B8D",
     slides: ["/slides/m4.jpg"],
     videoFile: "4. How This Program Supports You.mp4",
+    videoEmbed: "https://www.youtube.com/embed/xFl1EDYqoRI",
     sections: [
       {
         title: "How This Program Supports You",
         type: "video",
         videoPlaceholder: "How This Program Supports You",
+        videoEmbed: "https://www.youtube.com/embed/xFl1EDYqoRI",
         content: `Starting a GLP-1 medication can feel like a lot to navigate, but you don't have to do it alone. Each week, this program gives you the guidance, tools, and support to make steady, sustainable progress.`
       },
       {
@@ -179,11 +187,13 @@ In the upcoming training "GLP-1 Knowledge & Side Effects" in the app, you'll lea
     color: "#457B8D",
     slides: ["/slides/m5.jpg"],
     videoFile: "5. Your First Step Daily Tracking.mp4",
+    videoEmbed: "https://www.youtube.com/embed/-F4JKSndOy0",
     sections: [
       {
         title: "Start Building Awareness",
         type: "video",
         videoPlaceholder: "Your First Step: Daily Tracking",
+        videoEmbed: "https://www.youtube.com/embed/-F4JKSndOy0",
         content: `Before diving into the next lesson, let's take a moment to tune in to your body. Awareness is the first step toward lasting results.`
       },
       {
@@ -219,11 +229,13 @@ Don't overthink it. The goal isn't perfection — it's awareness. Even a quick m
     color: "#457B8D",
     slides: ["/slides/m6.jpg"],
     videoFile: "6. Final Thought.mp4",
+    videoEmbed: "https://www.youtube.com/embed/mM9alfrgqjk",
     sections: [
       {
         title: "Final Thought",
         type: "video",
         videoPlaceholder: "Final Thought",
+        videoEmbed: "https://www.youtube.com/embed/mM9alfrgqjk",
         content: `Remember: this medication is a tool — you are the one doing the work.
 
 You don't have to navigate this journey alone.
